@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: regular;
+    src: url("InterTight-Regular.ttf");
+}
+@font-face {
+    font-family: bold;
+    src: url("InterTight-Bold.ttf");
+}
+
+
+
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #0a0c1b;
+}
+
+
+.wrapper-all{
+   background-color: #0a0c1b;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+
+
+}
+
+.block{
+    width: 100%;
+    max-width: 1100px;
+    border-radius: .6rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.side{
+    width: 50%;
+    position: relative;
+    background-color: #1c1938;
+    
+}
+
+.txt-wrapper{
+    padding: 3.2rem;
+}
+
+.photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    opacity: .6;
+}
+
+
+
+.header{
+    width: 100%;
+    font-size: 2.4rem;
+    font-family: bold;
+    color: aliceblue;
+}
+
+.highlight{
+    color: #b256df;
+}
+
+.txt{
+    width: 100%;
+    font-size: .95rem;
+    font-family: regular;
+    color: rgb(175, 175, 175);
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+
+.bullets-wrap{
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.bullet{
+    width: 33%;
+
+}
+
+.number{
+    width: 100%;
+    font-size: 1.8rem;
+    font-family: bold;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0 0 .5rem;
+}
+
+.number-txt{
+    margin: 0%;
+    width: 100%;
+    font-size: .8rem;
+    font-family: regular;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    html{
+        font-size: 14px;
+    }
+
+   .wrapper-all{
+    display: block;
+   }
+
+    .block{
+    flex-direction: column-reverse;
+    }
+   
+    .side{
+        width: 100% 
+    }
+
+    #picture{
+        aspect-ratio: 654/480;
+    }
+
+
+  .bullets-wrap{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bullet{
+    margin-bottom: 20px;
+  }
+
+  .number-txt{
+    text-align: center;
+  }
+  .number{
+    text-align: center;
+  }
+
+  .header{
+    text-align: center;
+  }
+
+  .txt{
+    text-align: center;
+  }
+
+}
